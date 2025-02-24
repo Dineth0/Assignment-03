@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="lib/normalize.css">
+
+  <style>
+    body{
+      overflow: hidden;
+      border: 1px solid black;
+
+    }
+
+    body>div {
+      width: 50vw;
+      height: 50vh;
+      position: absolute;
+    }
+    body>div:nth-child(1) {
+      background-color: red;
+    }
+    body>div:nth-child(2) {
+      background-color: green;
+      right: 0;
+    }
+    body>div:nth-child(3) {
+      background-color: #ffc814;
+      bottom: 0;
+    }
+    body>div:nth-child(4) {
+      background-color: #ff016c;
+      right: 0;
+      bottom: 0;
+    }
+    body>div>div{
+      background-color: white;
+      position: absolute;
+      width: 12vw;
+      height: 12vw;
+      border-radius: 50%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    body>div>div>div{
+      background-color: red;
+      position: absolute;
+      width: 5vw;
+      height: 5vw;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+
+
+
+    body>#center{
+      background: white;
+      width: 14vw;
+      height: 14vw;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    body>#center>div{
+      background: red;
+      width: 7vw;
+      height: 7vw;
+      position: absolute;
+      border-radius: 200px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    #corner1{
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      left: 0;
+      bottom: 0;
+      border-top-right-radius: 100%;
+    }
+    #corner2{
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      right :0;
+      left: 0;
+      border-bottom-right-radius: 100%;
+    }
+    #corner3{
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 100%;
+    }
+    #corner4{
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: white;
+      right: 0;
+      bottom: 0;
+      border-top-left-radius: 100%;
+    }
+
+
+    .halfcorner{
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background-color: white;
+      border-radius: 50%;
+    }
+    #corner5{
+      left:0;
+      right: 0;
+      top: calc(-15vw/2);
+      margin :auto;
+
+
+    }
+    #corner6{
+      left:0;
+      right: 0;
+      bottom: calc(-15vw/2);
+      margin :auto;
+
+    }
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+
+<div>
+  <div id="cen1"></div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="halfcorner"></div>
+<div id="corner6" class="halfcorner"></div>
+
+<div id="center">
+  <div></div>
+</div>
+
+</body>
+</html>
